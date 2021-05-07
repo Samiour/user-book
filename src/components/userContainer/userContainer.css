@@ -1,0 +1,16 @@
+.user-container{
+    display: flex;
+    margin: 10px;
+    
+}
+.leftDiv{
+    width: 70%;
+    box-shadow: 5px 10px  #f3f3f3;
+   
+}
+.rightDiv{
+    width: 30%;
+    
+    margin-left: 20px;
+  
+}
