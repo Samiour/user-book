@@ -5,7 +5,7 @@ import { faInfoCircle,faCoffee,faPlusSquare} from '@fortawesome/free-solid-svg-i
 
 
 const User = (props) => {
-    console.log(props.detailInfo.name);
+    console.log(props.detailInfo);
     
     const{name,address,salary,image}=props.user;
     
@@ -16,7 +16,7 @@ const User = (props) => {
               <img src={image} alt=""/> 
            </div>
            <div>
-               <h2>I am {name}</h2>
+               <h2>{name}</h2>
                <button onClick={()=>props.detailInfo(props.user)} className='detail-button'> <FontAwesomeIcon icon={faInfoCircle} />Details</button>
 
                <button onClick={()=>props.totalInfo(props.user)} className='detail-button'> <FontAwesomeIcon icon={faPlusSquare} />Add</button>
